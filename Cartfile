@@ -1,0 +1,3 @@
+github "BatchLabs/Batch-iOS-SDK" >= 1.16.0
+github "mixpanel/mixpanel-iphone"
+github "erikdoe/ocmock" >= 3.6

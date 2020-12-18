@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51053780241257F900589FC6 /* BatchMixpanelObjcDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5105377E241257F400589FC6 /* BatchMixpanelObjcDispatcher.m */; };
+		51053781241257F900589FC6 /* BatchMixpanelObjcDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5105377F241257F400589FC6 /* BatchMixpanelObjcDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5105378424125A0100589FC6 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378324125A0100589FC6 /* Batch.framework */; };
+		51134E2F2590E26800D8ADFB /* Mixpanel.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51505BD2258CE44E00C1C1C7 /* Mixpanel.framework */; };
+		51505BD3258CE44E00C1C1C7 /* Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51505BD2258CE44E00C1C1C7 /* Mixpanel.framework */; };
+		51505BD4258CE45200C1C1C7 /* Mixpanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51505BD2258CE44E00C1C1C7 /* Mixpanel.framework */; };
+		625AA2FA2424F4BB000DACC4 /* BatchMixpanelObjcDispatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D530C82412553C009E7531 /* BatchMixpanelObjcDispatcher.framework */; };
+		625AA30E2424F59C000DACC4 /* BatchMixpanelDispatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AA3052424F538000DACC4 /* BatchMixpanelDispatcherTests.m */; };
+		625AA30F2424F59C000DACC4 /* BatchPayloadDispatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 625AA3062424F538000DACC4 /* BatchPayloadDispatcherTests.m */; };
+		625AA3102424F5B2000DACC4 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 625AA2ED2424D605000DACC4 /* OCMock.framework */; };
+		625AA3132424F5E4000DACC4 /* Tests-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 625AA3072424F538000DACC4 /* Tests-Prefix.pch */; };
+		625AA3172424F9F2000DACC4 /* Batch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5105378324125A0100589FC6 /* Batch.framework */; };
+		625AA3322424FAC1000DACC4 /* OCMock.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 625AA2ED2424D605000DACC4 /* OCMock.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		625AA2FB2424F4BB000DACC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51D530BF2412553B009E7531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51D530C72412553B009E7531;
+			remoteInfo = BatchMixpanelDispatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		625AA3312424FAA9000DACC4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				51134E2F2590E26800D8ADFB /* Mixpanel.framework in CopyFiles */,
+				625AA3322424FAC1000DACC4 /* OCMock.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5105377E241257F400589FC6 /* BatchMixpanelObjcDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BatchMixpanelObjcDispatcher.m; path = Classes/BatchMixpanelObjcDispatcher.m; sourceTree = "<group>"; };
+		5105377F241257F400589FC6 /* BatchMixpanelObjcDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BatchMixpanelObjcDispatcher.h; path = Classes/BatchMixpanelObjcDispatcher.h; sourceTree = "<group>"; };
+		5105378324125A0100589FC6 /* Batch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Batch.framework; path = Carthage/Build/iOS/Batch.framework; sourceTree = "<group>"; };
+		51505BD2258CE44E00C1C1C7 /* Mixpanel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mixpanel.framework; path = Carthage/Build/iOS/Mixpanel.framework; sourceTree = "<group>"; };
+		51D530C82412553C009E7531 /* BatchMixpanelObjcDispatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BatchMixpanelObjcDispatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51D530D3241256E8009E7531 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Module/Info.plist; sourceTree = "<group>"; };
+		625AA2ED2424D605000DACC4 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Carthage/Build/iOS/OCMock.framework; sourceTree = "<group>"; };
+		625AA2F52424F4BB000DACC4 /* BatchMixpanelObjcDispatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatchMixpanelObjcDispatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		625AA3022424F538000DACC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		625AA3032424F538000DACC4 /* BatchPayloadDispatcherTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatchPayloadDispatcherTests.h; sourceTree = "<group>"; };
+		625AA3052424F538000DACC4 /* BatchMixpanelDispatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchMixpanelDispatcherTests.m; sourceTree = "<group>"; };
+		625AA3062424F538000DACC4 /* BatchPayloadDispatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatchPayloadDispatcherTests.m; sourceTree = "<group>"; };
+		625AA3072424F538000DACC4 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		625AA3112424F5DB000DACC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625AA32F2424FA6F000DACC4 /* OCMock.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = OCMock.framework.dSYM; path = Carthage/Build/iOS/OCMock.framework.dSYM; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51D530C52412553B009E7531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51505BD3258CE44E00C1C1C7 /* Mixpanel.framework in Frameworks */,
+				5105378424125A0100589FC6 /* Batch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625AA2F22424F4BB000DACC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51505BD4258CE45200C1C1C7 /* Mixpanel.framework in Frameworks */,
+				625AA3172424F9F2000DACC4 /* Batch.framework in Frameworks */,
+				625AA2FA2424F4BB000DACC4 /* BatchMixpanelObjcDispatcher.framework in Frameworks */,
+				625AA3102424F5B2000DACC4 /* OCMock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5105378224125A0100589FC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				625AA32F2424FA6F000DACC4 /* OCMock.framework.dSYM */,
+				625AA2ED2424D605000DACC4 /* OCMock.framework */,
+				5105378324125A0100589FC6 /* Batch.framework */,
+				51505BD2258CE44E00C1C1C7 /* Mixpanel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51D530BE2412553B009E7531 = {
+			isa = PBXGroup;
+			children = (
+				51D530CA2412553C009E7531 /* BatchMixpanelObjcDispatcher */,
+				625AA3002424F538000DACC4 /* BatchMixpanelObjcDispatcherTests */,
+				51D530C92412553C009E7531 /* Products */,
+				5105378224125A0100589FC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		51D530C92412553C009E7531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51D530C82412553C009E7531 /* BatchMixpanelObjcDispatcher.framework */,
+				625AA2F52424F4BB000DACC4 /* BatchMixpanelObjcDispatcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51D530CA2412553C009E7531 /* BatchMixpanelObjcDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				5105377F241257F400589FC6 /* BatchMixpanelObjcDispatcher.h */,
+				5105377E241257F400589FC6 /* BatchMixpanelObjcDispatcher.m */,
+				51D530D3241256E8009E7531 /* Info.plist */,
+			);
+			path = BatchMixpanelObjcDispatcher;
+			sourceTree = "<group>";
+		};
+		625AA3002424F538000DACC4 /* BatchMixpanelObjcDispatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				625AA3112424F5DB000DACC4 /* Info.plist */,
+				625AA3012424F538000DACC4 /* InfoPlist.strings */,
+				625AA3032424F538000DACC4 /* BatchPayloadDispatcherTests.h */,
+				625AA3052424F538000DACC4 /* BatchMixpanelDispatcherTests.m */,
+				625AA3062424F538000DACC4 /* BatchPayloadDispatcherTests.m */,
+				625AA3072424F538000DACC4 /* Tests-Prefix.pch */,
+			);
+			path = BatchMixpanelObjcDispatcherTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		51D530C32412553B009E7531 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51053781241257F900589FC6 /* BatchMixpanelObjcDispatcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		51D530C72412553B009E7531 /* BatchMixpanelObjcDispatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51D530D02412553C009E7531 /* Build configuration list for PBXNativeTarget "BatchMixpanelObjcDispatcher" */;
+			buildPhases = (
+				51D530C32412553B009E7531 /* Headers */,
+				51D530C42412553B009E7531 /* Sources */,
+				51D530C52412553B009E7531 /* Frameworks */,
+				51D530C62412553B009E7531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatchMixpanelObjcDispatcher;
+			productName = "Batch-Mixpanel-Dispatcher";
+			productReference = 51D530C82412553C009E7531 /* BatchMixpanelObjcDispatcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		625AA2F42424F4BB000DACC4 /* BatchMixpanelObjcDispatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625AA2FD2424F4BB000DACC4 /* Build configuration list for PBXNativeTarget "BatchMixpanelObjcDispatcherTests" */;
+			buildPhases = (
+				625AA2F12424F4BB000DACC4 /* Sources */,
+				625AA2F22424F4BB000DACC4 /* Frameworks */,
+				625AA2F32424F4BB000DACC4 /* Resources */,
+				625AA3312424FAA9000DACC4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				625AA2FC2424F4BB000DACC4 /* PBXTargetDependency */,
+			);
+			name = BatchMixpanelObjcDispatcherTests;
+			productName = BatchMixpanelDispatcherTests;
+			productReference = 625AA2F52424F4BB000DACC4 /* BatchMixpanelObjcDispatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51D530BF2412553B009E7531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Batch;
+				TargetAttributes = {
+					51D530C72412553B009E7531 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					625AA2F42424F4BB000DACC4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 51D530C22412553B009E7531 /* Build configuration list for PBXProject "BatchMixpanelObjcDispatcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51D530BE2412553B009E7531;
+			productRefGroup = 51D530C92412553C009E7531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51D530C72412553B009E7531 /* BatchMixpanelObjcDispatcher */,
+				625AA2F42424F4BB000DACC4 /* BatchMixpanelObjcDispatcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51D530C62412553B009E7531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625AA2F32424F4BB000DACC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625AA3132424F5E4000DACC4 /* Tests-Prefix.pch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51D530C42412553B009E7531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51053780241257F900589FC6 /* BatchMixpanelObjcDispatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625AA2F12424F4BB000DACC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625AA30E2424F59C000DACC4 /* BatchMixpanelDispatcherTests.m in Sources */,
+				625AA30F2424F59C000DACC4 /* BatchPayloadDispatcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		625AA2FC2424F4BB000DACC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51D530C72412553B009E7531 /* BatchMixpanelObjcDispatcher */;
+			targetProxy = 625AA2FB2424F4BB000DACC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		625AA3012424F538000DACC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625AA3022424F538000DACC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51D530CE2412553C009E7531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51D530CF2412553C009E7531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51D530D12412553C009E7531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U5K2ETC2Y6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BatchMixpanelObjcDispatcher/Module/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchMixpanelObjcDispatcher;
+				PRODUCT_NAME = BatchMixpanelObjcDispatcher;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51D530D22412553C009E7531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U5K2ETC2Y6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BatchMixpanelObjcDispatcher/Module/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchMixpanelObjcDispatcher;
+				PRODUCT_NAME = BatchMixpanelObjcDispatcher;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		625AA2FE2424F4BB000DACC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5K2ETC2Y6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BatchMixpanelObjcDispatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchMixpanelDispatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		625AA2FF2424F4BB000DACC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5K2ETC2Y6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BatchMixpanelObjcDispatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchMixpanelDispatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51D530C22412553B009E7531 /* Build configuration list for PBXProject "BatchMixpanelObjcDispatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51D530CE2412553C009E7531 /* Debug */,
+				51D530CF2412553C009E7531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51D530D02412553C009E7531 /* Build configuration list for PBXNativeTarget "BatchMixpanelObjcDispatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51D530D12412553C009E7531 /* Debug */,
+				51D530D22412553C009E7531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		625AA2FD2424F4BB000DACC4 /* Build configuration list for PBXNativeTarget "BatchMixpanelObjcDispatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625AA2FE2424F4BB000DACC4 /* Debug */,
+				625AA2FF2424F4BB000DACC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51D530BF2412553B009E7531 /* Project object */;
+}
