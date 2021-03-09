@@ -312,4 +312,34 @@
     OCMVerify([_helperMock track:expectedName properties:expectedParameters]);
 }
 
+- (void)testInAppCloseError
+{
+    BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
+    
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingCloseError payload:testPayload];
+    
+    NSString *expectedName = @"batch_in_app_close_error";
+    NSDictionary<NSString *, id> *expectedParameters = @{
+        @"$source": @"batch",
+        @"utm_medium": @"in-app"
+    };
+    OCMVerify([_helperMock track:expectedName properties:expectedParameters]);
+}
+
+- (void)testInAppWebViewClickAnalyticsIdentifier
+{
+    BatchPayloadDispatcherTest *testPayload = [[BatchPayloadDispatcherTest alloc] init];
+    testPayload.webViewAnalyticsIdentifier = @"test1234";
+    
+    [self.dispatcher dispatchEventWithType:BatchEventDispatcherTypeMessagingWebViewClick payload:testPayload];
+    
+    NSString *expectedName = @"batch_in_app_webview_click";
+    NSDictionary<NSString *, id> *expectedParameters = @{
+        @"$source": @"batch",
+        @"utm_medium": @"in-app",
+        @"batch_webview_analytics_id": @"test1234"
+    };
+    OCMVerify([_helperMock track:expectedName properties:expectedParameters]);
+}
+
 @end
