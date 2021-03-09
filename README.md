@@ -14,7 +14,7 @@ The library will automatically start sending Mixpanel events once added in your 
 More info about event dispatchers [here](https://doc.batch.com/ios/advanced/event-dispatchers).
 
 # Requirements
- - Xcode 11
+ - Xcode 12
  - iOS 10+
  - Batch 1.16
 

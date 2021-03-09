@@ -6,6 +6,7 @@
 
 @synthesize notificationUserInfo;
 @synthesize sourceMessage;
+@synthesize webViewAnalyticsIdentifier;
 
 - (nullable NSObject *)customValueForKey:(nonnull NSString *)key {
     if (self.customPayload != nil) {

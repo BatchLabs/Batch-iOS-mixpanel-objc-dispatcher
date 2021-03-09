@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Batch",
+        "repositoryURL": "http://github.com/BatchLabs/Batch-iOS-SDK",
+        "state": {
+          "branch": null,
+          "revision": "ebd47816923b04d2477ea3ea7817ab889d49db4b",
+          "version": "1.17.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
