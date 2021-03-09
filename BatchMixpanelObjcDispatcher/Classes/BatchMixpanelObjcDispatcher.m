@@ -15,6 +15,7 @@ NSString* const BatchMixpanelMedium = @"utm_medium";
 NSString* const BatchMixpanelContent = @"utm_content";
 
 NSString* const BatchMixpanelTrackingId = @"batch_tracking_id";
+NSString* const BatchMixpanelWebViewAnalyticsId = @"batch_webview_analytics_id";
 
 @implementation BatchMixpanelObjcDispatcher
 {
@@ -65,9 +66,13 @@ NSString* const BatchMixpanelTrackingId = @"batch_tracking_id";
     
     // Init with default values
     [parameters setValue:@"batch" forKey:BatchMixpanelIntegrationId];
-    [parameters setValue:payload.trackingId forKey:BatchMixpanelCampaign];
     [parameters setValue:@"in-app" forKey:BatchMixpanelMedium];
+    [parameters setValue:payload.trackingId forKey:BatchMixpanelCampaign];
     [parameters setValue:payload.trackingId forKey:BatchMixpanelTrackingId];
+    
+    if (payload.webViewAnalyticsIdentifier != nil) {
+        [parameters setValue:payload.webViewAnalyticsIdentifier forKey:BatchMixpanelWebViewAnalyticsId];
+    }
     
     NSString *deeplink = payload.deeplink;
     if (deeplink != nil) {
@@ -199,6 +204,10 @@ NSString* const BatchMixpanelTrackingId = @"batch_tracking_id";
             return @"batch_in_app_auto_close";
         case BatchEventDispatcherTypeMessagingClick:
             return @"batch_in_app_click";
+        case BatchEventDispatcherTypeMessagingCloseError:
+            return @"batch_in_app_close_error";
+        case BatchEventDispatcherTypeMessagingWebViewClick:
+            return @"batch_in_app_webview_click";
         default:
             return @"batch_unknown";
     }

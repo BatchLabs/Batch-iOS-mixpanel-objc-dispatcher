@@ -124,8 +124,8 @@
 				625AA3112424F5DB000DACC4 /* Info.plist */,
 				625AA3012424F538000DACC4 /* InfoPlist.strings */,
 				625AA3032424F538000DACC4 /* BatchPayloadDispatcherTests.h */,
-				625AA3052424F538000DACC4 /* BatchMixpanelDispatcherTests.m */,
 				625AA3062424F538000DACC4 /* BatchPayloadDispatcherTests.m */,
+				625AA3052424F538000DACC4 /* BatchMixpanelDispatcherTests.m */,
 				625AA3072424F538000DACC4 /* Tests-Prefix.pch */,
 			);
 			path = BatchMixpanelObjcDispatcherTests;
