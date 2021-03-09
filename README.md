@@ -16,7 +16,7 @@ More info about event dispatchers [here](https://doc.batch.com/ios/advanced/even
 # Requirements
  - Xcode 12
  - iOS 10+
- - Batch 1.16
+ - Batch 1.17
 
 # Installation
 

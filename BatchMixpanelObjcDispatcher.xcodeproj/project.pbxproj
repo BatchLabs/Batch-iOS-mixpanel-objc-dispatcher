@@ -406,6 +406,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U5K2ETC2Y6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -424,7 +425,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchMixpanelObjcDispatcher;
 				PRODUCT_NAME = BatchMixpanelObjcDispatcher;
 				SKIP_INSTALL = YES;
@@ -437,6 +438,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U5K2ETC2Y6;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -455,7 +457,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.batch.ios.BatchMixpanelObjcDispatcher;
 				PRODUCT_NAME = BatchMixpanelObjcDispatcher;
 				SKIP_INSTALL = YES;

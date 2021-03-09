@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BatchMixpanelObjcDispatcher'
-  s.version          = '1.0.0'
+  s.version          = '2.0.0'
   s.summary          = 'Batch.com Events Dispatcher Mixpanel implementation.'
 
   s.description      = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.static_framework = true
   
-  s.dependency 'Batch', '~> 1.16'
+  s.dependency 'Batch', '~> 1.17'
   s.dependency 'Mixpanel'
   
   s.source_files = 'BatchMixpanelObjcDispatcher/Classes/**/*'
